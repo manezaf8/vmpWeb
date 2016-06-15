@@ -1,3 +1,7 @@
+					             /*****************
+					             *CSS by MANEZA F8*
+					             ******************/
+
 /* type selectors */
 html {
 	background-image: -moz-linear-gradient(to bottom, white 0%, #CC0000 100%);
@@ -82,6 +86,7 @@ header img {
 #nav_menu ul ul li {
 	float: none;
 	position: relative;
+    z-index:1000;
 }
 
 #nav_menu ul ul li ul {
@@ -169,6 +174,26 @@ section h2 {
 a.date_passed {
 	color: gray;
 }
+ 
+    /*picture slide show css*/
+    
+       .fadein { 
+        position:relative;
+        width:700px; 
+        height:332px;
+        opacity: 0.9;
+        padding: 2em;
+        /*max-width: 55%; 
+        max-height: 40%*/
+      
+      }
+       
+       .fadein img { 
+        position: absolute; 
+        left:0; top:0;
+        opacity: 0.9;
+         }
+
 /* the styles for the article */
 article {
 	width: 54.0404%;                         /* 535 / 990 */
@@ -253,6 +278,7 @@ section h2, aside h2 {
 @media only screen and (max-width: 767px) {
 #nav_menu {
 	display: none;
+
 }
 #mobile_menu {
 	display: block;

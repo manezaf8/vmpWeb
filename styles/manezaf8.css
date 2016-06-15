@@ -82,6 +82,7 @@ header img {
 #nav_menu ul ul li {
 	float: none;
 	position: relative;
+	 z-index:1000;
 }
 
 #nav_menu ul ul li ul {
@@ -201,6 +202,7 @@ aside h3 {
 	font-size: 1em;                          /* base font size */
 	color: #931420;
 	padding-bottom: .5em;
+	list-style-type: circle;
 }
 aside p {
 	margin-bottom: .5em;
