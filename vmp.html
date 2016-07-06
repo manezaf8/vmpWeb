@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> | </title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet"    href="styles/slide.css">
+    <link rel="stylesheet"    href="styles/animation.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4/jquery-ui.min.css">
+    <link href="styles/jquery.socialist.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="styles/accordion.css">  -->
+    <!-- Social-feed css -->
+    <link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+        <!-- font-awesome for social network icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>  -->
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!--the link for the JQuery UI-->
+    <script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/slideshow.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.socialist.js"></script>
+
+                <!-- jQuery for social feeds-->
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Codebird.js - required for TWITTER -->
+        <script src="bower_components/codebird-js/codebird.js"></script>
+        <!-- doT.js for rendering templates -->
+        <script src="bower_components/doT/doT.min.js"></script>
+        <!-- Moment.js for showing "time ago" and/or "date"-->
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <!-- Moment Locale to format the date to your language (eg. italian lang)-->
+        <script src="bower_components/moment/locale/it.js"></script>
+        <!-- Social-feed js -->
+        <script src="bower_components/social-feed/js/jquery.socialfeed.js"></script>
+
+             <!--social feeds scripts -->
+
+                <script type="text/javascript">
+        $(document).ready(function () {
+            $('#content').socialist({
+                networks: [
+                    {name:'facebook',id:'http://facebook.com/manezab'},
+                    {name:'twitter',id:'https://twitter.com/manezaf8'},
+                    {name:'instagram',id:'https://www.instagram.com/manezaf8'}
+                   ],
+                isotope:true
+                random:true,
+                fields:['source','heading','text','date','image','followers','likes']
+            });
+        });
+        </script>
+
+        <script>
+    $(document).ready(function(){
+        $('.social-feed-container').socialfeed({
+            // INSTAGRAM
+            instagram:{
+                accounts: ['@manezaf8','#manezaf8'],  //Array: Specify a list of accounts from which to pull posts
+                limit: 2,                                    //Integer: max number of posts to load
+                client_id: '06b7e0810a224d5baed4ed91b697e2c8'       //String: Instagram client id (optional if using access token)
+                access_token: '1833681365.1677ed0.8ee93652f543401e9319c60e6eb8ebd9' //String: Instagram access token
+            },
+
+                 facebook:{
+            accounts: ['@manezab','!manezab'],  //Array: Specify a list of accounts from which to pull wall posts
+            limit: 2,                                   //Integer: max number of posts to load
+            access_token: 'YOUR_FACEBOOK_ACCESS_TOKEN'  //String: "APP_ID|APP_SECRET"
+           },
+
+            // TWITTER
+            twitter:{
+                accounts: ['@manezaf8'],                      //Array: Specify a list of accounts from which to pull tweets
+                limit: 2,                                   //Integer: max number of tweets to load
+                consumer_key: '4DlVyV0ZFdL2MimHXBnNRAAOy',          //String: consumer key. make sure to have your app read-only
+                consumer_secret: 'x9ssZv1CuF4gxnHglctB2RRiVx4SndPOMSL9MzopZyh4XaEtqX',//String: consumer secret key. make sure to have your app read-only
+             },
+
+            // GENERAL SETTINGS
+            length:400
+            show_media:true,                                //Boolean: if false, doesn't display any post images
+            media_min_width: 300,                           //Integer: Only get posts with images larger than this value
+            update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
+            template: "tweet.html",                         //String: Filename used to get the post template.
+            template_html:                                  //String: HTML used for each post. This overrides the 'template' filename option
+            '<article class="twitter-post"> \
+            <h4>{{=it.author_name}}</h4><p>{{=it.text}}  \
+            <a href="{{=it.link}}" target="_blank">read more</a> \
+            </p> \
+            </article>',
+            date_format: "ll",                              //String: Display format of the date attribute (see http://momentjs.com/docs/#/displaying/format/)
+            moderation: function(content) {                 //Function: if returns false, template will have class hidden
+                return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
+            },
+            callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
+                console.log("All posts collected!");
+            }                                      //Integer: For posts with text longer than this length, show an ellipsis.
+                });
+            });
+</script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+
+
+    <!--    the accordion jQuery code  -->
+
+	<script>
+    	$(document).ready(function() {
+			$("#accordion").accordion(
+				{
+					event: "mouseover",
+					heightStyle: "content",
+					collapsible: true
+				});
+	    });
+	</script>
+
+
+</head>
+
+<body>
+	<header>
+		<img src="images/vmplogo.jpg" alt="vmp logo.jpg" width="130px" height="90px" >
+		<h2>VMP MUZIK GROUP</h2>
+		<h3>You Shine, We shine</h3>
+    </header>
+
+     <nav id="mobile_menu">
+
+     </nav>
+    <nav id="nav_menu">
+    	<ul>
+    		<li><a class="current" href="index.html">Home</a></li>
+    		<li><a href="#">Artists</a>
+            	<ul>
+                	<li><a href="manezaf8.html">Maneza F8</a></li>
+                    <li><a href="drastic.html">Drastic Measure</a></li>
+                    <li><a href="#">Legend Ramzy</a></li>
+                    <li><a href="#">Crews</a>
+                    	<ul>
+                        	<li><a href="#">Massive-Link</a></li>
+                    		<li><a href="#">YML Crew</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="2meli.html">2Mellie</a></li>
+                    <li><a href="april.html">Sira-man</a></li>
+                </ul>
+            </li>
+             <li><a href="tickets.html">Downloads</a>
+             	 <ul>
+                        	<li><a href="#">Music</a></li>
+                    		<li><a href="#">Videos</a></li>
+                    		<li><a href="#">Images</a></li>
+                 </ul>
+             </li>
+    		<li><a href="members.html">Contacts </a></li>
+    		<li class="lastitem"><a href="aboutus.html">About Us</a></li>
+    	</ul>
+    </nav>
+
+         <aside>
+          <h2>Founder and Director</h2>
+          <h3>Ntabethemba Sydewell Mabetshe</h3>
+          <p>Ntabethemba is well known by his stage name Maneza F8, mc-maneza or just Maneza depends on you which name you want to call him
+          	     </p>
+
+          <h3> The Foundation</h3>
+          <p><abbr title="Visible Music Productions">VMP</abbr> Started as just an angry group of artists who were mad at the music scene for not giving them a platform to record and show case their
+          	God giving talent as Hip-hop artists they decided to start their own group by the name if visible squard ofcause Maneza as a leader.</p>
+        <h1>Details About Maneza F8</h1>
+        <div id="accordion">
+ 			<h3>F8&rsquo;s Muzik Time Line</h3>
+			<div>
+				<ul>
+				    <li>2000 He starts writing some lyrics </li>
+                    <li>2003 Starts to attend Hip-hop sessions in Gugulethu</li>
+                    <li>2005 Start performing sessions in Philippi using 50 cent&acute;s beat.</li>
+                    <li>2007 team up with Thulani Matwa and make a track titled &quot; Life &quot;
+                      tried to record it at KD's studio but No Luck.</li>
+                    <li>2008 He start performing regulary at Udaba Nosiba Session in Philippi
+                    at Philippi Hall.</li>
+                    <li>2009 He Records his first Track after so many years of struggle,
+                    Halla to Scott and Jentro.</li>
+                    <li>2010 formed a crew called &quot;Visible Squared&quot;
+                      That led to the formation of VMP Muzik Group.</li>
+                      <li>2011 He Formed VMP officially and register it as a Pty Ltd..</li>
+                      <li>2012 Released His Mixtape Iziqhamo Zengqiqi</li>
+                      <li>2013 Working on an album </li>
+                      <li>The Rest is History</li>
+
+				</ul>
+			</div>
+			<h3>Maneza&acute;s Production History</h3>
+			<div>
+				<p>He started by just making beats trying to get tracks so he
+                 can rehease and try to record in 2010. by 2016 He have Produced more done
+                 1000 songs and more than 100 artists and sold many beats
+                 and mixed master lot of artist's songs also worked with artists from Nigeria,
+                 Zambia and Zimbabwe.</p><br />
+
+                 <p> He Learned to make beats using Fl Studio He then Learn Reason,
+                  Presonus Studio One and Cubase for recording</p><br />
+
+                  <strong><p> He can work with the following Softwares</p></strong>
+
+				<ul>
+					<li>Fl Studio 12.2</li>
+					<li>Reason 5</li>
+					<li>Presonus Studio One 3.1</li>
+                    <li>Cubase 5</li>
+				</ul>
+			</div>
+			<h3>What else can you learn about Maneza F8 ?</h3>
+			<div>
+				<p> He is also into Website Development He learned programming in UNISA and divelop this page with the knowladge He got while
+                learn coding With inmates in prison facilitated by Brothers for All.
+
+				</p>
+			</div>
+        </div>
+
+         <div id="SocialFeeds">
+           <div id="content"> feeds</div>
+
+         </div>
+
+     </aside>
+        <section>
+                  <h1> <abbr title="Visible Music Productions">VMP</abbr> MUZIK ARTISTS</h1>
+
+             <div id="slides">
+                <img src="images/artists/IMG-20160610-WA006.jpg" alt="2Mellie">
+                <img src="images/maneza.jpg" alt="Maneza F8 Mr. VMP">
+                <img src="images/drastic.jpg" alt="Drastyic bhut Plastic">
+                <img src="images/potsoyi.jpg" alt="At the Potsoyi ">
+                <img src="images/sira_man.jpg" alt="Sira-Man is back so VMP iphelele">
+            </div>
+          <h2>Looking for unique entertainment?</h2>
+          <p>You will never go wrong with <abbr title="Visible Music Productions">VMP</abbr> artists, Give us a Call if you want us to come
+          	and rock your party for an affordable price ofcause we have all kinds of sets for you
+          	so do not waste any minute.</p>
+          <p>We do birthday parties for kids and grown ups all kinds functions talking political events,
+          	church, schools etc..</p>
+          <p>Are you in or you really wanna miss out?</p>
+
+          <p id="contact_us"><em>Contact us by phone</em> at (082) 304 8335 for Perfomances.</p>
+        </section>
+
+    <footer>
+      <p>
+        <script>
+          var today = new Date();
+          document.write("Current date: ");
+          document.write(today.toDateString()
+          );
+        </script>
+      </p>
+      <p>
+        <script>
+            var today = new Date();
+            document.write("&copy;&nbsp;");
+            document.write(today.getFullYear());
+            document.write(", VMP Muzik Group, All Rights Reserved.")
+        </script>
+      </p>
+
+    </footer>
+    
+       <script>
+
+
+
+/******************************************
+
+* Cross browser cursor trailer script- By Brian Caputo (bcaputo@icdc.com)
+
+* Visit Dynamic Drive (http://www.dynamicdrive.com/) for full source code
+
+* Modified Dec 30th, 02' by DD. This notice must stay intact for use
+
+******************************************/
+
+
+
+A=document.getElementById
+
+B=document.all;
+
+C=document.layers;
+
+T1=new Array("trail1.gif",38,35,"trail2.gif",30,31,"trail3.gif",28,26,"trail4.gif",22,21,"trail5.gif",16,16,"trail6.gif",10,10)
+
+
+
+var offsetx=15 //x offset of trail from mouse pointer
+
+var offsety=10 //y offset of trail from mouse pointer
+
+
+
+nos=parseInt(T1.length/3)
+
+rate=50
+
+ie5fix1=0;
+
+ie5fix2=0;
+
+rightedge=B? document.body.clientWidth-T1[1] : window.innerWidth-T1[1]-20
+
+bottomedge=B? document.body.scrollTop+document.body.clientHeight-T1[2] : window.pageYOffset+window.innerHeight-T1[2]
+
+
+
+for (i=0;i<nos;i++){
+
+createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+" height="+T1[(i*3+2)]+" border=0>")
+
+}
+
+
+
+function createContainer(N,Xp,Yp,W,H,At,HT,Op,St){
+
+with (document){
+
+write((!A && !B) ? "<layer id='"+N+"' left="+Xp+" top="+Yp+" width="+W+" height="+H : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"; top:"+Yp+"; width:"+W+"; height:"+H+"; ");
+
+if(St){
+
+if (C)
+
+write(" style='");
+
+write(St+";' ")
+
+}
+
+else write((A || B)?"'":"");
+
+write((At)? At+">" : ">");
+
+write((HT) ? HT : "");
+
+if (!Op)
+
+closeContainer(N)
+
+}
+
+}
+
+
+
+function closeContainer(){
+
+document.write((A || B)?"</div>":"</layer>")
+
+}
+
+
+
+function getXpos(N){
+
+if (A)
+
+return parseInt(document.getElementById(N).style.left)
+
+else if (B)
+
+return parseInt(B[N].style.left)
+
+else
+
+return C[N].left
+
+}
+
+
+
+function getYpos(N){
+
+if (A)
+
+return parseInt(document.getElementById(N).style.top)
+
+else if (B)
+
+return parseInt(B[N].style.top)
+
+else
+
+return C[N].top
+
+}
+
+
+
+function moveContainer(N,DX,DY){
+
+c=(A)? document.getElementById(N).style : (B)? B[N].style : (C)? C[N] : "";
+
+if (!B){
+
+rightedge=window.innerWidth-T1[1]-20
+
+bottomedge=window.pageYOffset+window.innerHeight-T1[2]
+
+}
+
+c.left=Math.min(rightedge, DX+offsetx) + 'px';
+
+c.top=Math.min(bottomedge, DY+offsety) + 'px';
+
+}
+
+function cycle(){
+
+//if (IE5)
+
+if (document.all&&window.print){
+
+ie5fix1=document.body.scrollLeft;
+
+ie5fix2=document.body.scrollTop;
+
+}
+
+for (i=0;i<(nos-1);i++){
+
+moveContainer("CUR"+i,getXpos("CUR"+(i+1)),getYpos("CUR"+(i+1)))
+
+}
+
+}
+
+
+
+function newPos(e){
+
+moveContainer("CUR"+(nos-1),(B)?event.clientX+ie5fix1:e.pageX+2,(B)?event.clientY+ie5fix2:e.pageY+2)
+
+}
+
+
+
+function getedgesIE(){
+
+rightedge=document.body.clientWidth-T1[1]
+
+bottomedge=document.body.scrollHeight-T1[2]
+
+}
+
+
+
+if (B){
+
+window.onload=getedgesIE
+
+window.onresize=getedgesIE
+
+}
+
+
+
+if(document.layers)
+
+document.captureEvents(Event.MOUSEMOVE)
+
+document.onmousemove=newPos
+
+setInterval("cycle()",rate)
+
+</script>
+
+</body>
+</html>

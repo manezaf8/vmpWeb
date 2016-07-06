@@ -1,0 +1,10 @@
+/*#accordion div {
+	overflow: hidden;
+	height: 0;
+	transition: height 2s ease-in-out;
+	-webkit-transition: height 2s ease-in-out;
+}
+#accordion div:target {
+	height: 380px;
+}
+*/

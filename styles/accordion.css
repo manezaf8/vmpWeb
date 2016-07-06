@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+aside #accordion {
+  	width: 35.35353%;                        /* 350 / 990 */
+/*	float: right;   */
+	padding: 2.0202%;                        /* 20 / 990 */
+    background-color: #CC579D;
+	margin: 1.5em 2.0202% 0 0;
+}
+/*aside {
+   padding: 2.0202%;*/
+}
+h1 { 
+	font-size: 150%;
+	margin-bottom: .5em;
+}
+ul {
+	padding-left: .1em;
+}
+li {
+	padding-bottom: .2em;
+}

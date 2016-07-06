@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title> | </title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/slicknav.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+</head>
+
+<body>
+	<header>
+	  	<a href="index.html"><img src="images/vmplogo.jpg" alt="VMP Muzik Logo" width="180" height="90"></a>
+	     <h2>VMP MUZIK GROUP</h2>
+		<h3>You Shine, We shine</h3>
+    </header>
+
+     <nav id="mobile_menu">
+
+     </nav>
+    <nav id="nav_menu">
+    	<ul>
+    		<li><a class="current" href="index.html">Home</a></li>
+    		<li><a href="#">Artists</a>
+            	<ul>
+                	<li><a href="manezaf8.html">Maneza F8</a></li>
+                    <li><a href="drastic.html">Drastic Measure</a></li>
+                    <li><a href="#">Legend Ramzy</a></li>
+                    <li><a href="#">Crews</a>
+                    	<ul>
+                        	<li><a href="#">Massive-Link</a></li>
+                    		<li><a href="#">YML Crew</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="2meli.html">2Mellie</a></li>
+                    <li><a href="april.html">Sira-man</a></li>
+                </ul>
+            </li>
+             <li><a href="tickets.html">Downloads</a>
+             	 <ul>
+                        	<li><a href="#">Music</a></li>
+                    		<li><a href="#">Videos</a></li>
+                    		<li><a href="#">Images</a></li>
+                 </ul>
+             </li>
+    		<li><a href="members.html">Contacts </a></li>
+    		<li class="lastitem"><a href="aboutus.html">About Us</a></li>
+    	</ul>
+    </nav>
+
+        <aside>
+          <h2>Founder and Director</h2>
+          <h3>Ntabethemba Sydewell Mabetshe</h3>
+          <p>Ntabethemba is well known by his stage name Maneza F8, mc-maneza or just Maneza depends on you which name you want to call him
+          	     </p>
+
+          <h3> The Foundation</h3>
+          <p>VMP Started as just an angry group of artists who were mad at the music scene for not giving them a platform to record and show case their
+          	God giving talent as Hip-hop artists they decided to start their own group by the name if visible squard ofcause Maneza as a leader.</p>
+        </aside>
+        <section>
+          <h1>Download and Listen to Good Muzik</h1>
+        <br />
+
+        <br />
+           <div id="muzik">
+
+          <p>VMP MUZIK FAM - Never fade out</p>
+                <a href="https://s3-us-west-2.amazonaws.com/kasimp3/downloads/153496.mp3"> play </a>
+
+                <br />
+
+                <p> VMP MUZIK FAM - Celebrate </p>
+                <a href="http://kasimp3.co.za/153498">Download</a>
+                </body>
+
+                <br />
+
+                <p> Jambase and Maneza F8   Ntombaza [prod by F8] </p>
+
+                <a href="http://kasimp3.co.za/100425">Download</a>
+                <br />
+
+
+              <p><strong>VMP Muzik - Celebrate(Prod by Maneza F8)</strong></p>
+        		<audio id="audioplayer" controls>
+
+        			<source src="media/VMP_MUZIK_FAM-CELEBRATE_.mp3" type="audio/mp3">
+
+            		<object type="application/x-shockwave-flash" width="50" height="50">
+                		<param name="movie" value="media/sjv_welcome.swf">
+                		<param name="wmode" value="transparent">
+                		<param name="quality" value="high">
+                		<!--[if !IE]>-->
+                    		<object type="application/x-shockwave-flash"
+                            	    data="media/sjv_welcome.swf"
+                            		width="100" height="50">
+                            		<param name="wmode" value="transparent">
+                            		<param name="quality" value="high">
+                    		</object>
+                		<!--<![endif]-->
+            		</object>
+        		</audio>
+
+          <br />
+
+          <p><strong>Legend Ramzy ft Maneza F8 - Ungakhuzi (Prod by Maneza F8)</strong></p>
+        		<audio id="audioplayer" controls>
+
+        			<source src="media/Ramzy ft Maneza f8 - ungakhuzi (prod at vmp).mp3" type="audio/mp3">
+
+            		<object type="application/x-shockwave-flash" width="50" height="50">
+                		<param name="movie" value="media/sjv_welcome.swf">
+                		<param name="wmode" value="transparent">
+                		<param name="quality" value="high">
+                		<!--[if !IE]>-->
+                    		<object type="application/x-shockwave-flash"
+                            	    data="media/sjv_welcome.swf"
+                            		width="100" height="50">
+                            		<param name="wmode" value="transparent">
+                            		<param name="quality" value="high">
+                    		</object>
+                		<!--<![endif]-->
+            		</object>
+        		</audio>
+        </div>
+        <br />
+        <br />
+          <p>Are you in or you really wanna miss out?</p>
+
+          <p id="contact_us"><em>Contact us by phone</em> at (082) 304 8335 for Perfomances.</p>
+        </section>
+
+    <footer>
+      <p>&copy; Copyright 2016 VMP MUZIK GROUP pty LMT...</p>
+    </footer>
+</body>
+</html>
