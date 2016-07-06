@@ -60,8 +60,13 @@ header h3 {
 }
 header img {
 	width: 15.1515%;                     /* 80 / 990 */
+<<<<<<< HEAD
 	max-width: 200px;                    /* native size */
 	min-width: 180px;
+=======
+	max-width: 100px;                    /* native size */
+	min-width: 40px;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 	float: left;
 	margin-left: 2.0202%;               /* 20 / 990 */
 }
@@ -82,6 +87,10 @@ header img {
 #nav_menu ul ul li {
 	float: none;
 	position: relative;
+<<<<<<< HEAD
+=======
+	 z-index:1000;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 
 #nav_menu ul ul li ul {
@@ -185,6 +194,7 @@ article img {
 article p {
 	margin-bottom: .5em;
 }
+<<<<<<< HEAD
 
 article strong {
     text-transform: capitalize;
@@ -201,6 +211,8 @@ article strong {
      background: #CCCAAC;
  }
 
+=======
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 /* the styles for the sidebar */
 aside {
 	width: 35.35353%;                        /* 350 / 990 */
@@ -217,6 +229,10 @@ aside h3 {
 	font-size: 1em;                          /* base font size */
 	color: #931420;
 	padding-bottom: .5em;
+<<<<<<< HEAD
+=======
+	list-style-type: circle;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 aside p {
 	margin-bottom: .5em;
@@ -235,13 +251,17 @@ footer {
 	width: 100%;                             /* full width of body */
 	border-top: 2px solid #f2972e;
 	padding-top: .7em;
+<<<<<<< HEAD
 	/* background: #808080; */
+=======
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 footer p {
 	font-size: .75em;                        /* 12 / 16 */
 	text-align: right;
 	margin-right: 2.0202%;                   /* 20 / 990 */
 }
+<<<<<<< HEAD
     /* BackToTop button css */
 #scroll {
     position:fixed;
@@ -277,6 +297,9 @@ footer p {
             /********************************
             * hide the mobile menu initially*
             *********************************/
+=======
+/* hide the mobile menu initially */
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 #mobile_menu {
 	display: none;
 }
@@ -304,7 +327,11 @@ section h2, aside h2 {
 	display: block;
 }
 .slicknav_menu {
+<<<<<<< HEAD
 	background-color: #CC34CC !important;
+=======
+	background-color: #facd8a !important;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 body {
 	width: 100%;                           /* full width of screen */

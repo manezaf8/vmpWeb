@@ -132,15 +132,25 @@
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+<<<<<<< HEAD
 	background: #000;
 	color: #000;
+=======
+	background: #ccc;
+	color: #fff;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 .slicknav_nav a:hover {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+<<<<<<< HEAD
 	background: #000;
 	color: #000;
+=======
+	background: #ccc;
+	color: #222;
+>>>>>>> 54e7e0b59ccd1d8e6dfdfa7ba2b122cd686e964b
 }
 .slicknav_nav .slicknav_txtnode {
 	margin-left: 15px;
