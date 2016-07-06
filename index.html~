@@ -2,11 +2,12 @@
 
 <html lang="en">
 <head>
-	<title>VMP Muzik | About Us The official VMP SITE </title>
+	<title>VMP muzik group official website | All you need to know about VMP and their artists</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+
     <link rel="stylesheet" href="styles/slicknav.css">
     <link rel="stylesheet"    href="styles/slide.css">
     <link rel="stylesheet"    href="styles/animation.css">
@@ -21,11 +22,21 @@
     <script src="js/slideshow.js"></script>
 
   <script type="text/javascript">
+
+      <link rel="stylesheet" href="styles/slicknav.css">
+   
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+   
+    <script src="js/jquery.slicknav.min.js"></script>
+	
+	<script type="text/javascript">
+
     $(document).ready(function(){
 		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
     });
     </script>
 
+<<<<<<< HEAD
 
        <!-- The back to Top Script-->
 
@@ -45,20 +56,52 @@
 });
 </script>
 
+
 </head>
 
 <body>
-	<header>
-  	<a href="index.html"><img src="images/vmplogo.jpg" alt="VMP Muzik Logo" width="180" height="100"></a>
-		<h2>About US</h2>
-		<h3>Visible Muzik Produc</h3>
-    </header>
 
  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
- 
+
+
+	<header>
+		<a href="index.html"><img src="images/vmplogo.jpg" alt="VMP Muzik Logo" width="180" height="100"></a>
+
+    <h2><abbr title="Visible Music Productions">VMP</abbr> MUZIK GROUP</h2>
+		<h3>You Shine, We shine</h3>
+    </header>
+
      <nav id="mobile_menu">
 
+      </nav>
+=======
+   
+    <script type="text/javascript">
+      
+        $(function(){
+          $('.fadein img:gt(0)').hide();
+          setInterval(function(){
+          $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+});
+
+    </script>
+
+</head>
+	
+<body>
+	<header>
+		<img src="images/vmplogo.jpg" alt="vmp logo.jpg" width="130px" height="80px" >
+		<h2>VMP MUZIK GROUP</h2>
+		<h3>You Shine, We shine</h3>
+    </header>
+    
+     <nav id="mobile_menu">
+     	
      </nav>
+
     <nav id="nav_menu">
     	<ul>
     		<li><a class="current" href="index.html">Home</a></li>
@@ -67,28 +110,32 @@
                 	<li><a href="manezaf8.html">Maneza F8</a></li>
                     <li><a href="drastic.html">Drastic Measure</a></li>
                     <li><a href="#">Legend Ramzy</a></li>
-                    <li><a href="#">Crews</a>
+
+                    <li><a href="sampson.html">Crews</a>
+
                     	<ul>
                         	<li><a href="#">Massive-Link</a></li>
                     		<li><a href="#">YML Crew</a></li>
                         </ul>
-                    </li>
+
+                    </li>    
                     <li><a href="2meli.html">2Mellie</a></li>
+
                     <li><a href="april.html">Sira-man</a></li>
                 </ul>
             </li>
              <li><a href="tickets.html">Downloads</a>
              	 <ul>
-                        	<li><a href="#">Music</a></li>
-                    		<li><a href="#">Videos</a></li>
-                    		<li><a href="#">Images</a></li>
+                        	<li><a href="muzik.html">Music</a></li>
+                    		<li><a href="videos.html">Videos</a></li>
+                    		<li><a href="images.html">Images</a></li>
                  </ul>
              </li>
     		<li><a href="members.html">Contacts </a></li>
     		<li class="lastitem"><a href="aboutus.html">About Us</a></li>
     	</ul>
     </nav>
-   
+
         <aside>
           <h2>Founder and Director</h2>
           <h3>Ntabethemba Sydewell Mabetshe</h3>
@@ -96,81 +143,34 @@
           	     </p>
 
           <h3> The Foundation</h3>
-          <p>VMP Started as just an angry group of artists who were mad at the music scene for not giving them a platform to record and show case their
+
+          <p><abbr title="Visible Music Productions">VMP</abbr> Started as just an angry group of artists who were mad at the music scene for not giving them a platform to record and show case their
           	God giving talent as Hip-hop artists they decided to start their own group by the name if visible squard ofcause Maneza as a leader.</p>
         </aside>
         <section>
-          <h1>About VMP Muzik</h1>
+          <h1> <abbr title="Visible Music Productions">VMP</abbr> MUZIK ARTISTS</h1>
 
-   <p>Be the part of the movement where everything is possible we
-    known as the movement that makes something out of nothing
-    <cite>Visible music productions (VMP)</cite> is the Movement started
-    with the idea of just trying to record some Hip Hop music in the
-    Township of Zwelethemba,<br>
-    Worcester just outside Cape Town. The movement started in the
-    year 2010 by Ntabethemba Mabetshe, after struggling so much to find
-    a place to record He then decide to get a Computer and hustle some
-    software's like Cubase, <abbr title="Fruity Loops">FL</abbr>
-    Studio. Even though He struggled to make beats at first at the end
-    He finally figure it out how to lay down patterns, on <abbr title=
-    "Fruity Loops">FL</abbr> Studio and the right Tempos for hip hop
-    beats that was all He needed to know to get Him started with the
-    recordings.</p> <br />
-
-   <p>after the beginning of the recordings Maneza started
-    distributing His Music amongst his friends and people he knew songs
-    started to spread in Zwelethemba with Bluetooth sharing and the
-    other ways, More Artists started to get interested in working with
-    Maneza F8 at <abbr title="Visible Music Productions">VMP</abbr><br>
-    Artists like Buso Baxa, Gladwell, Simamnkele, Ricardo, Sandile
-    Xaba, Olwethu Ludidi, Vuyani Mini, Which the call themselves
-    Visible Squad, they started by recording at another young dude's
-    home studio called Sight records back in those days, they came with
-    a Hit single titled Izwelethemba Neziyobisi (drugs in Zwelethemba).
-    The track received so much love in a way that it spreaded in some
-    other nearby townships and Visible squard was then popular as well
-    as Maneza F8 who was then MC_MANEZA, there is no way you can talk
-    about hip hop in Worcester, Zwelethemba without mentioning
-    Mc_maneza and VMP MUZIK.</p>
-
-    <p>Throughout the years <abbr title="visible muzik productions">VMP</abbr>
-    has been a house hold name in WORCESTER. Maneza then started a group
-    called <strong>Massive-link</strong> with one of the <em>Two</em>
-    most talented young Rappers Sira-man and hard sentance a Hip Hop group
-    that consists of <em>Three</em> talented rappers in late 2010 they
-    recorded a track called <strong>Sathana suka emvakwam</strong>
-    whih also featured in <strong>Maneza f8's</strong> Mixtape titled
-    <em>IZIQHAMO ZENGQIQI</em>, Then many tracks followed that recieved lot of love
-    in the streets and ended them a name in the worcester muzik scene.
-    </p>
-
-     <p><strong> <em>Five years later</em> <abbr title="Visible muzik productions">VMP</abbr>
-     has recorded more than 100 tracks and more than 20 artists
-     Maeza F8 tracks have been played on the radios, Maneza have recorded
-     <em>Two</em> Mixtapes at <abbr title="Visible muzik productions">VMP</abbr>
-     and Sold more than 400 copies out of both Tapes,
-     in 2011 <abbr title="Visible muzik productions">VMP</abbr> signed
-     <em>Six</em>artists with a <em>Three</em> Year contract deal,
-     but then artist were not comited in their work which made it
-     hard for <abbr title="Visible muzik productions">VMP</abbr>
-     to honour the tearms of the agreement.
-
-      </strong>
-    </p>
+         <div id="slides">
+                <img src="images/artists/IMG-20160610-WA006.jpg" alt="2Mellie">
+                <img src="images/maneza.jpg" style="width: 30%; height: 30%;" alt="Maneza F8 Mr. VMP">
+                <img src="images/drastic.jpg" alt="Drastyic bhut Plastic">
+                <img src="images/potsoyi.jpg" alt="At the Potsoyi ">
+                <img src="images/sira_man.jpg" alt="Sira-Man is back so VMP iphelele">
+            </div>
 
           <h2>Looking for unique entertainment?</h2>
-          <p>You will never go wrong with VMP artists, Give us a Call if you want us to come
+          <p>You will never go wrong with <abbr title="Visible Music Productions">VMP</abbr> artists, Give us a Call if you want us to come
           	and rock your party for an affordable price ofcause we have all kinds of sets for you
           	so do not waste any minute.</p>
           <p>We do birthday parties for kids and grown ups all kinds functions talking political events,
-          	church, schools etc..</p>
-          <p>Are you in or you really wanna miss out?</p>
+          	church, schools etc... <a href="aboutus.html" style="color: black;">Read more</a></p> <br />
+          <p>Are you in or you really wanna miss out?</p> 
 
           <p id="contact_us"><em>Contact us by phone</em> at (082) 304 8335 for Perfomances.</p>
         </section>
-   
+
     <footer>
-     <p>
+      <p>
         <script>
           var today = new Date();
           document.write("Current date: ");
@@ -186,12 +186,8 @@
             document.write(", VMP Muzik Group, All Rights Reserved.")
         </script>
       </p>
-    </footer>
-    
-     <script>
 
-
-
+       <script>
 /******************************************
 
 * Cross browser cursor trailer script- By Brian Caputo (bcaputo@icdc.com)
@@ -396,7 +392,43 @@ setInterval("cycle()",rate)
 
 </script>
 
-    
-    
+          <p>VMP Started as just an angry group of artists who were mad at the music scene for not giving them a platform to record and show case their
+          	God giving talent as Hip-hop artists they decided to start their own group by the name if visible squard ofcause Maneza as a leader.</p>
+            <h3>We also do </h3>
+            <ul>
+              <li> Production we record artists signed or not you are well come to come and record with us, 
+              like it or not we are the force to be recken with. we produce quality muzik with an affordable price </li>
+              <li>Management of the artists we provide guidence and orginize performances and also get involved with artist's personal life try to reach out and make sure He/she is emotionally fit for the journey because muzik life is a journey.</li>
+              <li>Record Jingles for the radios and do beats and background muzik for the radio programs and TV shows.</li>
+              <li> Beatmaking by Maneza f8 we should be able to check out his beats in <a href="https://soundcloud.com/manezaf8">  sound cloud</a> and just google search <a href="manezaf8.html"> Maneza F8 </a>  sound cloud</a>.</li> 
+
+            </ul>
+        </aside>
+        <section>
+          <h1>VMP MUZIK ARTISTS</h1>
+         </div>
+
+                <div class="fadein">
+                  <img src="https://gp1.wac.edgecastcdn.net/802892/production_public/Artist/2648727/image/1364832686_Manezapromo4.jpg" style="width: 500px; height: 330px"} >
+                  <img src="http://i.imgur.com/pYEpFme.jpg?1" style="width: 500px; height: 330px">
+                  <img src=" https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11821756_1179514258730470_89573409_n.jpg" style="width: 500px; height: 330px">
+                  
+                </div>
+
+          <h2>Looking for unique entertainment?</h2>
+          <p>You will never go wrong with VMP artists, Give us a Call if you want us to come
+          	and rock your party for an affordable price ofcause we have all kinds of sets for you
+          	so do not waste any minute.</p>
+          <p>We do birthday parties for kids and grown ups all kinds functions talking political events,
+          	church, schools etc..</p>
+          <p>Are you in or you really wanna miss out?</p>
+        
+          <p id="contact_us"><em>Contact us by phone</em> at (082) 304 8335 for Perfomances.</p>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2016 VMP MUZIK GROUP pty LMT...</p>
+    </footer>
+
 </body>
 </html>
